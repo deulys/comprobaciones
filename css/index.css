@@ -45,10 +45,8 @@
         transition: all .2s ease-in-out;
     }
     img:hover{
-        scale: 1.08;
+        transform: scale(1.08);
         box-shadow: 8px 7px 21px 4px rgba(0,0,0,0.86);
-        -webkit-box-shadow: 8px 7px 21px 4px rgba(0,0,0,0.86);
-        -moz-box-shadow: 8px 7px 21px 4px rgba(0,0,0,0.86);
     }
   
     
@@ -228,7 +226,7 @@
         transition: all .3s ease-in-out;
     }
     .contemporanea__boton:hover{
-        scale: 1.04;
+        transform: scale(1.04);
         background-color: #d3d3d3e0;
         
 
