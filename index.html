@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Página web contiene información sobre desarrollo de apartamentos arquitectonicos contemporaneos a la vanguardia desarrollados en muy corto tiempo">
+        <title>Comprobaciones</title>
+        <link rel="stylesheet" href="css/index.css">
+
+        <script src="js/index.js" defer></script>
+
+        <!-- Metodología BEM -->
+    </head>
+<body>
+    <header class="cabecera">
+        <h1 class="cabecera__logo">
+           <picture title="Logo de la marca">
+            <img class="cabecera__img" src="assets/logo.png" alt="Logo de la marca">
+           </picture> 
+        </h1>
+        <nav>
+            <ul class="cabecera__lista">
+                <li class="cabecera__item"><a href="#">Home</a></li>
+                <li class="cabecera__item"><a href="#">About</a></li>
+                <li class="cabecera__item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="cabecera__redes">
+                <li class="cabecera__item"><a href="#">Fb</a></li>
+                <li class=""> - </li>
+                <li class="cabecera__item"><a href="#">Tw</a></li>
+                <li class=""> - </li>
+                <li class="cabecera__item"><a href="#">In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contemporanea">
+            <article class="contenporanea__contenido">
+                <h2 class="contemporanea__titulo">
+                    Contemporary vision of housing architecture
+                </h2>
+                <p class="contemporanea__parrafo">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cumque iste ut optio exercitationem illo?
+                </p>
+                <button class="contemporanea__boton">
+                    View more +
+                </button>
+            </article>
+            <picture class="contemporanea__imagen" title="Arquitectura de edificios contemporaneos">
+                <source media="(max-width:900px)"  srcset="assets/arhitecture-img-9-min-min.jpg">
+                <source media="(max-width:1200px)" srcset="assets/arhitecture-img-9-min.jpg">
+                <img src="assets/arhitecture-img-9.jpg" alt="Edificios comptemporaneos">
+            </picture>
+        </div>
+        
+        <section class="lorem">
+            <h2 class="lorem__titulo">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit quisquam praesentium asperiores mollitia minus, maiores officiis temporibus quam! Et omnis ea inventore provident voluptate.
+            </h2>
+            <div class="lorem__articulo">
+                <p class="lorem__parrafo">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nemo repellendus voluptates commodi fugit laborum repudiandae quidem omnis temporibus, aliquam laboriosam, ipsum distinctio, nesciunt praesentium?
+                </p>
+                <p class="lorem__parrafo">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut fugit dicta molestias ratione sed quaerat saepe ipsa. Doloribus minima tenetur tempore nostrum eos autem distinctio delectus, maxime consequatur nisi!
+                </p>
+            </div>
+        </section>
+        <div class="arquitectura">
+            <picture title="Arquitectura externa">
+                <source media="(max-width:900px)" srcset="assets/arhitecture-img-2-min-min.jpg">
+                <source media="(max-width:1200px)" srcset="assets/arhitecture-img-2-min.jpg">
+                <img src="assets/arhitecture-img-2-min.jpg" loading="lazy" class="arquitectura__externa" alt="Arquitectura Externa de edificio">
+            </picture>
+            <article class="arquitectura__articulo">
+                <h2 class="arquitectura__titulo"> Landscapes</h2>
+                <p class="arquitectura__parrafo">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempore ab maiores vitae tempora perspiciatis.
+                </p>
+                <button class="arquitectura__boton"> View more  +</button>
+                <h2 class="arquitectura__titulo"> Urban spaces</h2>
+                <p class="arquitectura__parrafo">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum facere quasi corporis incidunt hic.
+                </p>
+                <button class="arquitectura__boton"> View more  +</button>
+            </article>
+            
+            <article class="arquitectura__articulo arquitectura__articulo--ancho">
+                <div class="arquitectura__column">
+                    <h2 class="arquitectura__titulo">Private houses</h2>
+                <p class="arquitectura__parrafo">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cumque ipsam doloribus suscipit ea voluptatem.
+                </p>
+                <button class="arquitectura__boton">View more  +</button>
+                </div>
+                
+                <picture>
+                    <source media="(max-width:900px)" srcset="assets/arhitecture-img-3-min-min.jpg">
+                    <source media="(max-width:1200px)" srcset="assets/arhitecture-img-3-min.jpg">
+                    <img class="arquitectura__img" loading="lazy" src="assets/arhitecture-img-3-min.jpg" alt="Piezas de columnas contemporaneas">
+                </picture>
+            </article>
+            
+        </div>
+
+        <div class="video">
+            <img src="assets/arhitecture-img-4-min.jpg" loading="lazy" alt="Video descriptivo de la Arquitectura">
+            <img src="assets/video-button.png" loading="lazy" class="video__play" alt="Boton de play para video">
+        </div>
+        <div class="contenedor">       
+            <section id="contenedor__slider" class="contenedor__slider">
+                <div class="contenedor__container">
+                    <div class="contenedor__item">
+                        <p class="contenedor__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. In perferendis officiis nihil sint eos tempore vitae voluptas optio, provident quos culpa repellendus iure, corrupti voluptate necessitatibus mollitia rem, accusantium quis.</p>
+                        <h2 class="contenedor__autor">Daniel Weiner - Manager at Neue Nacional Gallery</h2>
+                    </div>
+                    <div class="contenedor__item">
+                        <p class="contenedor__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, distinctio saepe officiis, libero perspiciatis dolor cumque aliquid provident enim magnam, error praesentium rem ad est?</p>
+                        <h2 class="contenedor__autor">David Smith - CTO at Neue Nacional Gallery</h2>
+                    </div>
+                    <div class="contenedor__item">
+                        <p class="contenedor__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, iure? Dignissimos vero iure illo minima ad necessitatibus quam laudantium, consequuntur, perspiciatis itaque reiciendis recusandae aliquid?</p>
+                        <h2 class="contenedor__autor">Josefine Lee - CEO at Neue Nacional Gallery</h2>
+                    </div>
+                </div>
+                <nav class="contenedor__navigation">
+                    <button class="nav-button prev-button"><span>&#60;</span></button>
+                    <button class="nav-button next-button"><span>&#62;</span></button>
+                </nav>
+            </section>
+        </div>
+    
+        <div class="imagenes">
+            <picture class="imagenes__grid">
+                <source media="(max-width:900px)" srcset="assets/arhitecture-img-5-min-min.jpg">
+                <source media="(max-width:1200px)" srcset="assets/arhitecture-img-5-min.jpg">
+                <img loading="lazy" src="assets/arhitecture-img-5-min.jpg" alt=" Arquitecura Edificio">
+            </picture>
+            <picture class="imagenes__grid">
+                <source media="(max-width:900px)" srcset="assets/arhitecture-img-6-min-min.jpg">
+                <source media="(max-width:1200px)" srcset="assets/arhitecture-img-6-min.jpg">
+                <img loading="lazy" src="assets/arhitecture-img-6.jpg" alt="Entrada de uno de los edificios modelos">
+            </picture>
+            <picture class="imagenes__grid">
+                <source media="(max-width:900px)" srcset="assets/arhitecture-img-7-min-min.jpg">
+                <source media="(max-width:1200px)" srcset="assets/arhitecture-img-7-min.jpg">
+                <img loading="lazy" src="assets/arhitecture-img-7.jpg" alt="Amplio balcon en espacioso apartamento">
+            </picture>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__copy">
+            <picture>
+                <img class="footer__logo" loading="lazy" src="assets/logo-footer.png" alt="Logo">
+            </picture>
+            <p class="footer__textcopy">Copyright © Qodeinteractive </p>
+
+        </div>
+        <div class="footer__direccion">
+            <p>1368 Maryland Avenue NY</p>
+            <p>99-851-9632, 72-537-8409</p>
+        </div>
+        <div class="footer__mail">
+            <div>
+                <input class="footer__input" placeholder="Your e-mail" type="email">
+                <button class="footer__submit">Submit +</button>
+            </div>
+            <div class="footer__linea"></div>
+            <ul class="footer__redes">
+                <li><a href="#">Fb</a></li>
+                <li> - </li>
+                <li><a href="#">Tw</a></li>
+                <li> - </li>
+                <li><a href="#">In</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

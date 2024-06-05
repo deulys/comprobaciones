@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+    
+    li {
+    list-style: none;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    }
+    
+    a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    }
+    
+    p a {
+    display: inline;
+    }
+    img, picture, video, iframe, svg {
+    display: block;
+    width: 100%;
+    height: initial;
+    }
+    svg {
+    fill: currentColor;
+    }
+    button{
+        background-color: inherit;
+    }
+    :root {
+    font-size: 100%;
+    }
+    html {
+    scroll-behavior: smooth;
+    }
+  
+    
+ 
+@font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/open-sans-v40-latin-300.woff2') format('woff2'); 
+  }
+  
+  @font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/open-sans-v40-latin-300italic.woff2') format('woff2'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-italic.woff2') format('woff2'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/open-sans-v40-latin-500.woff2') format('woff2'); 
+  }
+ 
+  @font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/open-sans-v40-latin-500italic.woff2') format('woff2'); 
+
+  }
+    
+  @font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v40-latin-600.woff2') format('woff2'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v40-latin-600italic.woff2') format('woff2'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v40-latin-700.woff2') format('woff2'); 
+  }
+ 
+  @font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v40-latin-700italic.woff2') format('woff2'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/open-sans-v40-latin-800.woff2') format('woff2'); 
+  }
+ 
+  @font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 800;
+    src: url('../fonts/open-sans-v40-latin-800italic.woff2') format('woff2'); 
+  }
+
+    .cabecera{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height: 85px;
+        font-size: .75rem;
+        font-weight: 700;
+    }
+
+    .cabecera__logo{
+        margin-left: 25px;
+    }
+    .cabecera__img{
+        min-width: 6.25rem;
+    }
+    .cabecera__lista{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        gap: 35px;
+    }
+    .cabecera__redes{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 25px;
+        gap: 8px;
+    }
+    .contemporanea{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap:50px;
+        width: 70vw;
+        margin-top: 120px;
+    }
+    .contenporanea__contenido{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 40px;
+        margin-left: 75px;
+        
+    }
+    .contemporanea__titulo{
+        width: 20vw;        
+        font-size: 2vw;
+        font-weight: 500;
+        margin: auto;
+    }
+    .contemporanea__parrafo{
+        width: 20vw;
+        margin: 25px auto;
+    }
+    .contemporanea__boton{
+        
+        background-color:#d3d3d36e;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px 20px;
+        margin: auto;
+    }
+    .contemporanea__imagen{
+        width: 100%;
+    }
+    .contemporanea__imagen{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .lorem{
+        width: 40%;
+        margin-left: 25vw;
+        margin-top: 35vh;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .lorem__articulo{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 25px;
+        font-size: 14px;
+        font-weight: 100;
+        gap: 25px;
+    }
+    .arquitectura{
+
+        width: 50%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 75px auto;
+        gap: 2.8125rem;
+       
+    }
+    .arquitectura__externa{
+        width: 90%;
+        margin: auto;
+    }
+    .arquitectura__titulo{
+        font-size: 1.125rem;
+        font-weight: 800;
+        margin-top: 2.5rem;
+
+    }
+    .arquitectura__parrafo{
+        margin-top: 1.25rem;
+        line-height: 1.4rem;
+    }
+    .arquitectura__boton{
+        margin: 1.4rem 0;
+        font-size: .75rem;
+        font-weight: 500;
+    }
+   
+    .arquitectura__img{
+        width: 85%;
+    }
+    .video{
+        position: relative;
+        width: 70%;
+        margin-left: 8vw;
+        margin-top: 2.5rem;
+        display: inline-block;
+    }
+    .video__play{
+        position: absolute;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
+        width:5rem; 
+        height: auto; 
+    }
+/* Estilo básico para la galería */
+.contenedor{
+    position: relative;
+    width: 60%;
+    margin: 5rem auto;
+}
+  .contenedor__slider {
+      max-width: 700px;
+      margin: auto;
+      overflow: hidden;
+      /* position: absolute; */
+  }
+  
+  .contenedor__container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+  }
+  
+  .contenedor__item {
+      min-width: 100%;
+      box-sizing: border-box;
+  }
+  
+  .contenedor__item p, .contenedor__item h2 {
+      width: 100%;
+      display: block;
+  }
+  
+  /* Navegación de la galería */
+  .contenedor__navigation {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);   
+      
+  }
+  
+  .nav-button {
+      
+      color: rgba(0, 0, 0, 0.691);
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+   
+  }
+  .nav-button > span {
+    font-size: 30px;
+  }
+  .nav-button:hover {
+      background-color: #0c0c0c08;
+      color: rgba(169, 169, 169, 0.558);
+      border-radius: 50%;
+    }
+.contenedor__parrafo{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+}
+.contenedor__autor{
+    margin-top: 1.5625rem;
+    font-size: .75rem;
+}
+.imagenes{
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1.5625rem;
+    margin: auto;
+}
+.footer{
+    width: 50% ;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.8125rem;
+    margin: 5.6875rem auto;
+}
+.footer__logo{
+    width: 9.375rem;
+}
+.footer__redes{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .7rem;
+    font-size: .75rem;
+}
+.footer__textcopy{
+    margin-top: 1.5625rem;
+    font-size: .75rem;
+
+}
+.footer__direccion{
+    font-size: .75rem;
+    line-height: 1.5625rem;
+}
+.footer__input:focus-visible{
+    border: none;
+    outline: none;
+}
+.footer__linea{
+    border-top: 1px solid black;
+}
+.footer__submit{
+    cursor: pointer;
+}
+
+
+/* Medias */
+@media(max-width:480px){
+    .cabecera__redes{
+        display: none;
+    }
+}
+
+@media(max-width:730px){
+    .footer{
+       display: flex;
+       flex-flow: column nowrap;
+       justify-content: center;
+       align-items: center;
+    }
+}
+@media(max-width:900px){
+    .contenedor__navigation{
+        width: 150%;
+    }
+
+    .contemporanea{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+        margin:1.25rem auto;
+        min-width: 90%;
+    }
+    .contemporanea__imagen{
+        
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: .9375rem;
+        margin: auto;
+    }
+    .contemporanea__titulo{
+        width: 70%;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        
+    }
+    .contemporanea__parrafo{
+        width: 70%;
+        margin: auto;
+    }
+    .contenporanea__contenido{
+        margin: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contemporanea__boton{
+        margin-top: .9375rem;
+    }
+    .lorem{
+        min-width: 70%;
+        margin: 3.5rem auto;
+        padding: 1.5625rem;
+    }
+    .arquitectura{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 1.875rem auto;
+        gap:1rem;
+    }
+    .arquitectura__externa{
+        width: 100%;
+        padding: .9375rem;
+    }
+    .arquitectura__articulo{
+        padding: 1.5625rem;
+        text-align: center;
+    }
+    .arquitectura__articulo--ancho{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .arquitectura__img{
+        width: 100%;
+    }
+    .video{
+        width: 100%;
+        margin-left: 0;
+        padding: 1.5625rem;
+        margin-top: 1.2rem;
+    }
+    .imagenes{
+        display: block;
+        width: 100%;
+        padding: 1.5625rem;
+    }
+    .imagenes__grid{
+        margin-bottom: 1.25rem;
+    }
+}
+
+
+@media(max-width:1380px){
+    .contemporanea{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+        margin:1.25rem auto;
+        width: 40%;
+    }
+    .contemporanea__imagen{
+        margin-right: 2.8125rem;
+    }
+    .arquitectura{
+        width: 90% ;
+    }
+    .contenedor__navigation{
+        width: 160%;
+    }
+    .imagenes{
+        width: 70%;
+    }
+    .footer{
+        width: 90%;
+    }
+    .lorem{
+        width: 50%;
+        margin: 4.125rem auto;
+    }
+    .contemporanea__imagen{
+        
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: .9375rem;
+        margin: auto;
+    }
+    .contemporanea__titulo{
+        width: 70%;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        
+    }
+    .contemporanea__parrafo{
+        width: 70%;
+        margin: auto;
+    }
+    .contenporanea__contenido{
+        margin: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contemporanea__boton{
+        margin-top: .9375rem;
+    }
+}
+
+
+@media(max-width: 1800px){
+    .arquitectura{
+        width: 70% ;
+    }
+    .contenedor__navigation{
+        width: 100%;
+    }
+    .imagenes{
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
