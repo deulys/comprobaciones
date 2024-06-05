@@ -391,6 +391,9 @@
     gap: 2.8125rem;
     margin: 5.6875rem auto;
 }
+.footer__label{
+    display: none;
+}
 .footer__logo{
     width: 9.375rem;
 }
