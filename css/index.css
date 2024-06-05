@@ -40,6 +40,16 @@
     html {
     scroll-behavior: smooth;
     }
+
+    img{
+        transition: all .2s ease-in-out;
+    }
+    img:hover{
+        scale: 1.08;
+        box-shadow: 8px 7px 21px 4px rgba(0,0,0,0.86);
+        -webkit-box-shadow: 8px 7px 21px 4px rgba(0,0,0,0.86);
+        -moz-box-shadow: 8px 7px 21px 4px rgba(0,0,0,0.86);
+    }
   
     
  
@@ -156,6 +166,7 @@
     .cabecera__img{
         min-width: 6.25rem;
     }
+   
     .cabecera__lista{
         display: flex;
         flex-flow: row nowrap;
@@ -164,6 +175,8 @@
         margin: auto;
         gap: 35px;
     }
+      
+    
     .cabecera__redes{
         display: flex;
         flex-flow: row nowrap;
@@ -172,6 +185,10 @@
         margin-right: 25px;
         gap: 8px;
     }
+
+   
+
+
     .contemporanea{
         display: flex;
         flex-flow: row nowrap;
@@ -207,6 +224,14 @@
         font-weight: 500;
         padding: 10px 20px;
         margin: auto;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+    .contemporanea__boton:hover{
+        scale: 1.04;
+        background-color: #d3d3d3e0;
+        
+
     }
     .contemporanea__imagen{
         width: 100%;
@@ -400,6 +425,38 @@
 }
 
 
+
+/* Se agrega codigo de transiciones en esta etapa para no repetir codigo y tomar la transicion de todas las listas para que funcione tambien con las redes del footer */
+
+.cabecera__lista a, .cabecera__redes a, .footer__redes a{
+    position: relative;
+    display: block;
+    padding: 5px;
+  }
+  
+  .cabecera__lista a::before, .cabecera__redes a::before, .footer__redes a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #000000, #302c2d, #342a2e);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .cabecera__lista a:hover::before, .cabecera__redes a:hover::before, .footer__redes a:hover::before {
+    transform: scaleX(1);
+  }
+
+  .cabecera__lista[data-animation="to-left"] a::before, .cabecera__redes[data-animation="to-left"] a::before, .footer__redes[data-animation="to-left"] a::before   {
+    transform-origin: right;
+  }
+
+
 /* Medias */
 @media(max-width:480px){
     .cabecera__redes{
@@ -457,7 +514,9 @@
     }
     .contemporanea__boton{
         margin-top: .9375rem;
+       
     }
+
     .lorem{
         min-width: 70%;
         margin: 3.5rem auto;
