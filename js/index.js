@@ -11,13 +11,13 @@ document.querySelector('.next-button').addEventListener('click', () => {
 });
 
 function navigate(direction) {
-    const galleryContainer = document.querySelector('.contenedor__container');
-    const totalImages = document.querySelectorAll('.contenedor__item').length;
+    const sliderContainer = document.querySelector('.contenedor__container');
+    const totalSlider = document.querySelectorAll('.contenedor__item').length;
     
-    currentIndex = (currentIndex + direction + totalImages) % totalImages;
+    currentIndex = (currentIndex + direction + totalSlider) % totalSlider;
     const offset = -currentIndex * 100;
     
-    galleryContainer.style.transform = `translateX(${offset}%)`;
+    sliderContainer.style.transform = `translateX(${offset}%)`;
 }
 
 //AUTOPLAY
